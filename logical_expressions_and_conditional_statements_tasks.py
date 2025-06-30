@@ -1,3 +1,4 @@
+
 # logical_expressions_and_conditional_statements_tasks.py
 
 # ---------------------------------- Task 1 ---------------------------------- #
@@ -7,6 +8,14 @@
 
 ### Your code here
 
+# number = int(input("Enter a number: "))
+
+# if number==0:
+#     print("Zero")
+# elif number%2==0:
+#     print("Even")
+# else:
+#     print("Odd")
 
 
 ### EXPECTED OUTPUT:
@@ -22,6 +31,16 @@
 """
 
 ### Your code here
+
+# year = int(input("Enter a year:"))
+
+# if year%4==0:
+#     if year%400==0:
+#         print(f"{year} is a leap year")
+#     elif year%100==0:
+#         print(f"{year} is not a leap year")
+# else:
+#     print(f"{year} is not a leap year")    
 
 ### EXPECTED OUTPUT:
 # Enter a year: 2024
@@ -41,6 +60,31 @@
 """
 
 ### Your code here
+
+# header = "Fahrenheit/Celsius Converter"
+# option_1 = "1 => Convert to Fahrenheit"
+# option_2 = "2 => Convert to Celsius"
+
+# print("")
+# print(f"{11*'*'}{header:^31}{11*'*'}")
+# print(f"# {option_1:<50}"'#')
+# print(f"# {option_2:<50}"'#')
+# print(f"{"*" * 53}")
+# print("")
+
+# user_choice = int(input("Enter your choice [1/2]: "))
+
+# if user_choice == 1:
+#     temperature_entered_in_celsius = float(input("Enter temperature in C:"))
+#     temperature_converted_to_fahrenheit = temperature_entered_in_celsius * (9/5) + 32
+#     print(f"{temperature_entered_in_celsius} = {temperature_converted_to_fahrenheit}")
+# elif user_choice == 2:
+#     temperature_entered_in_fahrenheit = float(input("Enter temperature in F:"))
+#     temperature_converted_to_celsius = (temperature_entered_in_fahrenheit - 32 ) * 5/9
+#     print(f"{temperature_entered_in_fahrenheit} = {temperature_converted_to_celsius}")
+# else:
+#     print("You have to choose between 1 or 2")
+
 
 ### EXPECTED OUTPUT:
 # **********Fahrenheit/Celsius Converter ***********
@@ -80,6 +124,28 @@
 """
 
 ### Your code here
+
+# user_height_in_meters = float(input("Enter your height in meters: "))
+# user_weight_in_kilograms = float(input("Enter your weight in kilograms: "))
+
+# bmi = user_weight_in_kilograms / (user_height_in_meters * user_height_in_meters)
+
+# if bmi <=16.0:
+#     print(f"Your BMI = {bmi:.2f}, Category: Underweight (Severe thinness)")
+# elif bmi >=16.0 and bmi<17:
+#     print(f"Your BMI = {bmi:.2f}, Category: Underweight (Moderate thinness)")
+# elif bmi >=17.0 and bmi<18.5:
+#     print(f"Your BMI = {bmi:.2f}, Category: Underweight (Mild thinness)")
+# elif bmi >=18.5 and bmi<24.9:
+#     print(f"Your BMI = {bmi:.2f}, Category: Normal range")
+# elif bmi >=25.0 and bmi<30:
+#     print(f"Your BMI = {bmi:.2f}, Overweight (Pre-obese)")
+# elif bmi >=30.0 and bmi<35:
+#     print(f"Your BMI = {bmi:.2f}, Obese (Class I)")
+# elif bmi >=35.0 and bmi<40:
+#     print(f"Your BMI = {bmi:.2f}, Obese (Class II)")
+# else:
+#     print(f"Your BMI = {bmi:.2f}, Obese (Class III)")
 
 ### EXPECTED OUTPUT:
 # Enter weight in kilograms: 92
