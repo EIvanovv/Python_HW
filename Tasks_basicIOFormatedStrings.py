@@ -8,6 +8,8 @@
 ### Given:
 # No initial variables are given. You need to get input from the user.
 
+### Your code here
+
 # name = input("Enter your name:")
 # age = int(input("Enter your age:"))
 # color = input("Enter your favourite color:")
@@ -71,6 +73,8 @@
 ### Given:
 # No initial variables are given. You need to get input from the user.
 
+### Your code here
+
 # item_1 = input("Enter name for item 1: ")
 # price_item_1 = float(input("Enter price for item 1: "))
 # item_2 = input("Enter name for item 2: ")
@@ -107,6 +111,8 @@
 
 ### Given:
 # No initial variables are given. You need to get input from the user.
+
+### Your code here
 
 # current_temperature_in_celsius = float(input("Please enter the current temperature in Celsius: "))
 # temperature_converted_to_fahrenheit = current_temperature_in_celsius * (9/5) + 32
