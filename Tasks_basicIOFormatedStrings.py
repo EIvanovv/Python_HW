@@ -117,7 +117,7 @@
 # current_temperature_in_celsius = float(input("Please enter the current temperature in Celsius: "))
 # temperature_converted_to_fahrenheit = current_temperature_in_celsius * (9/5) + 32
 
-# print(f"{current_temperature_in_celsius:.1f}°C is qual to {temperature_converted_to_fahrenheit:.1f}°F")
+# print(f"{current_temperature_in_celsius:.1f}°C is equal to {temperature_converted_to_fahrenheit:.1f}°F")
 
 ### Expected output (example):
 # Enter temperature in Celsius: 25
