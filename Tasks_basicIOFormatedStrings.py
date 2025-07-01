@@ -85,9 +85,9 @@
 
 # print("")
 # print(f"{header:^40}")
-# print(f"{price_item_1:<20}{price_item_1:>20}")
-# print(f"{price_item_2:<20}{price_item_2:>20}")
-# print(f"{price_item_3:<20}{price_item_3:>20}")
+# print(f"{item_1:<20}{price_item_1:>20}")
+# print(f"{item_2:<20}{price_item_2:>20}")
+# print(f"{item_3:<20}{price_item_3:>20}")
 
 ### Expected output (example):
 # Enter name of item 1: Milk
