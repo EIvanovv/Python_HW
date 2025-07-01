@@ -8,14 +8,14 @@
 
 ### Your code here
 
-# number = int(input("Enter a number: "))
+number = float(input("Enter a number: "))
 
-# if number==0:
-#     print("Zero")
-# elif number%2==0:
-#     print("Even")
-# else:
-#     print("Odd")
+if number==0:
+    print("Zero")
+elif number>0:
+    print("Positive")
+else:
+    print("Negative")
 
 
 ### EXPECTED OUTPUT:
@@ -62,29 +62,29 @@
 
 ### Your code here
 
-header = "Fahrenheit/Celsius Converter"
-option_1 = "1 => Convert to Fahrenheit"
-option_2 = "2 => Convert to Celsius"
+# header = "Fahrenheit/Celsius Converter"
+# option_1 = "1 => Convert to Fahrenheit"
+# option_2 = "2 => Convert to Celsius"
 
-print("")
-print(f"{11*'*'}{header:^31}{11*'*'}")
-print(f"# {option_1:<50}"'#')
-print(f"# {option_2:<50}"'#')
-print(f"{"*" * 53}")
-print("")
+# print("")
+# print(f"{11*'*'}{header:^31}{11*'*'}")
+# print(f"# {option_1:<50}"'#')
+# print(f"# {option_2:<50}"'#')
+# print(f"{"*" * 53}")
+# print("")
 
-user_choice = int(input("Enter your choice [1/2]: "))
+# user_choice = int(input("Enter your choice [1/2]: "))
 
-if user_choice == 1:
-    temperature_entered_in_celsius = float(input("Enter temperature in C:"))
-    temperature_converted_to_fahrenheit = temperature_entered_in_celsius * (9/5) + 32
-    print(f"{temperature_entered_in_celsius}C = {temperature_converted_to_fahrenheit}F")
-elif user_choice == 2:
-    temperature_entered_in_fahrenheit = float(input("Enter temperature in F:"))
-    temperature_converted_to_celsius = (temperature_entered_in_fahrenheit - 32 ) * 5/9
-    print(f"{temperature_entered_in_fahrenheit}F = {temperature_converted_to_celsius}C")
-else:
-    print("You have to choose between 1 or 2")
+# if user_choice == 1:
+#     temperature_entered_in_celsius = float(input("Enter temperature in C:"))
+#     temperature_converted_to_fahrenheit = temperature_entered_in_celsius * (9/5) + 32
+#     print(f"{temperature_entered_in_celsius}C = {temperature_converted_to_fahrenheit}F")
+# elif user_choice == 2:
+#     temperature_entered_in_fahrenheit = float(input("Enter temperature in F:"))
+#     temperature_converted_to_celsius = (temperature_entered_in_fahrenheit - 32 ) * 5/9
+#     print(f"{temperature_entered_in_fahrenheit}F = {temperature_converted_to_celsius}C")
+# else:
+#     print("You have to choose between 1 or 2")
 
 
 ### EXPECTED OUTPUT:
