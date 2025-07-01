@@ -57,7 +57,7 @@
 
 # amount = float(input("Enter an amount: "))
 
-# print(f"{amount:,}")
+# print(f"${amount:,}")
 
 ### Expected output (example):
 # Enter an amount: 1234567.89
