@@ -33,6 +33,19 @@
 
 ### Your code here
 
+# list = []
+
+# user_input = input("Enter a list of numbers separated by spaces: ")
+# separated_values = user_input.split(" ")
+# user_start = int(input("Enter start index: "))
+# user_end = int(input("Enter end index: "))
+
+# list.extend(separated_values)
+
+# sliced_list = list[user_start:user_end]
+
+# print(f"Sliced list: {sliced_list}")
+
 
 
 ### EXPECTED OUTPUT:
