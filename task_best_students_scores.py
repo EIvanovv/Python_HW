@@ -9,4 +9,4 @@ best_students_scores = dict(student_scores.items())
 
 for key,value in best_students_scores.items():
     if value > 4.00:
-        print(f"{key:<10}- {value}")
+        print(f"{key:<10}- {value:.2f}")
