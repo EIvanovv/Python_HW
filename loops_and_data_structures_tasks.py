@@ -3,6 +3,8 @@
     Write a program that takes an integer n and prints a triangle pattern of stars (*). The number of stars in the first line is 1, in the second line is 2, and so on up to n stars in the n-th line.
 """
 
+### Your code here
+
 # triangle_len = int(input("Enter start number: "))
 # counter = 0
 # print_symbol = 1
@@ -11,13 +13,6 @@
 #     print("*" * print_symbol)
 #     print_symbol += 1
 #     counter +=1
-
-
-
-
-### Your code here
-
-
 
 ### EXPECTED OUTPUT:
 # Enter stars number: 4
