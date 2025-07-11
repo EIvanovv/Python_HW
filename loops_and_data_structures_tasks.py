@@ -31,20 +31,20 @@
 
 ### Your code
 
-words_list = []
-words_that_start_with_a_vowel =[]
+# words_list = []
+# words_that_start_with_a_vowel =[]
 
-while True:
-    user_input = input("Enter a word (or '0' to stop): ")
-    if user_input == "0":
-        break
-    words_list.append(user_input)
+# while True:
+#     user_input = input("Enter a word (or '0' to stop): ")
+#     if user_input == "0":
+#         break
+#     words_list.append(user_input)
     
-for x in words_list:
-    if x[0] in "aeiou":
-        words_that_start_with_a_vowel.append(x)
+# for x in words_list:
+#     if x[0] in "aeiou":
+#         words_that_start_with_a_vowel.append(x)
 
-print(f"Words that start with a vowel: {words_that_start_with_a_vowel}")
+# print(f"Words that start with a vowel: {words_that_start_with_a_vowel}")
     
 ### EXPECTED OUTPUT:
 # Enter a word (or '0' to stop): atom
