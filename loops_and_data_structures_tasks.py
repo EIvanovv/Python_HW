@@ -65,16 +65,16 @@ words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 
 # d = {len(x): [x] for x in words}
 
-d = {}
+# d = {}
 
-for value in words:
-    key = len(value)
-    if key in d:
-        d[key].append(value)
-    else:
-        d[key] = [value]
+# for value in words:
+#     key = len(value)
+#     if key in d:
+#         d[key].append(value)
+#     else:
+#         d[key] = [value]
     
-print(d)
+# print(d)
 
 
 ### Your code here
