@@ -63,6 +63,16 @@
 ### Given:
 words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 
+# d = {len(x): [x] for x in words}
+
+# d = {}
+
+# for x in words:
+#     d[len(x)] = [x]
+
+# print(d)
+
+
 ### Your code here
 
 ### EXPECTED OUTPUT:
