@@ -99,6 +99,14 @@ sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
 
 ### Your code here
 
+refrigirated_and_on_sale = refrigerated.intersection(sale)
+on_sale_but_not_do_not_require_refrigeration = sale.difference(refrigerated)
+suggested_new_sale_categories = refrigerated.difference(sale)
+
+print(f"Categories both refrigerated and on sale: {refrigirated_and_on_sale}")
+print(f"Sale categories not needing refrigeration: {on_sale_but_not_do_not_require_refrigeration}")
+print(f"Suggested new sale categories from refrigerated items: {suggested_new_sale_categories}")
+
 ### EXPECTED OUTPUT:
 # Categories both refrigerated and on sale: {'dairy', 'frozen foods'}
 # Sale categories not needing refrigeration: {'snacks', 'beverages', 'cereals'}
