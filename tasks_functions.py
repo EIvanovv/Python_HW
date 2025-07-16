@@ -207,8 +207,10 @@ using the sorted() built-in function.
 
 ### YOUR CODE HERE
 
+sort_by_last_letter = key=lambda x: x[-1]
+
 ### TEST:
-# print(sorted(["cherry", "banana", "apple"], key=sort_by_last_letter))
+print(sorted(["cherry", "banana", "apple"], key=sort_by_last_letter))
 
 ### EXPECTED OUTPUT:
 # ['banana', 'apple', 'cherry']
