@@ -23,7 +23,7 @@ def get_user_data():
         while True:
             user_height = float(input(("Enter your height in cm (must be between 50 and 250): ")))
             if user_height in range(50,251):
-                user["height"] = user_height
+                user["height"] = cm_to_meters(user_height)
                 break
     
     def validate_weight_input():
@@ -65,24 +65,24 @@ def calc_BMI_category(bmi):
     Returns:
         [string] -- [bmi category]
     """
-    category = [" Underweight (Severe thinness)", "Underweight (Moderate thinness)", "Underweight (Mild thinness)", "Normal range", "Overweight (Pre-obese)", "Obese (Class I)", "Obese (Class II)", "Obese (Class III)"]
+    category = ["Underweight (Severe thinness)", "Underweight (Moderate thinness)", "Underweight (Mild thinness)", "Normal range", "Overweight (Pre-obese)", "Obese (Class I)", "Obese (Class II)", "Obese (Class III)"]
 
     if bmi <=16.0:
-        return {category[0]}
+        return category[0]
     elif bmi >=16.0 and bmi<17:
-        return {category[1]}
+        return category[1]
     elif bmi >=17.0 and bmi<18.5:
-        return {category[2]}
+        return category[2]
     elif bmi >=18.5 and bmi<24.9:
-        return {category[3]}
+        return category[3]
     elif bmi >=25.0 and bmi<30:
-        return {category[4]}
+        return category[4]
     elif bmi >=30.0 and bmi<35:
-        return {category[5]}
+        return category[5]
     elif bmi >=35.0 and bmi<40:
-        return {category[6]}
+        return category[6]
     else:
-        return {category[7]}
+        return category[7]
 
 def print_results(bmi_category):
     """[Prints the BMI category to the user ]
@@ -92,18 +92,19 @@ def print_results(bmi_category):
     """
     print(f"{bmi_category}")
 
-# def cm_to_meters(cm):
-#     """converts centimetres to meters
+def cm_to_meters(cm):
+    """converts centimetres to meters
 
-#     Arguments:
-#         cm {[int]}
+    Arguments:
+        cm {[int]}
 
-#     Returns:
-#         [float]
-#     """
-#     return cm / 100
+    Returns:
+        [float]
+    """
+    return cm / 100
 
 user_data = get_user_data()
 bmi = calc_BMI(user_data["weight"],user_data["height"] )
 bmi_category = calc_BMI_category(bmi)
-print_results(bmi_category)
+print("")
+print(f"Hello, {user_data['name']}, your bmi is: {bmi_category}")

@@ -126,28 +126,28 @@
 
 ### Your code here
 
-# user_height_in_meters = float(input("Enter your height in meters: "))
-# user_weight_in_kilograms = float(input("Enter your weight in kilograms: "))
-# category = [" Underweight (Severe thinness)", "Underweight (Moderate thinness)", "Underweight (Mild thinness)", "Normal range", "Overweight (Pre-obese)", "Obese (Class I)", "Obese (Class II)", "Obese (Class III)"]
+user_height_in_meters = float(input("Enter your height in meters: "))
+user_weight_in_kilograms = float(input("Enter your weight in kilograms: "))
+category = [" Underweight (Severe thinness)", "Underweight (Moderate thinness)", "Underweight (Mild thinness)", "Normal range", "Overweight (Pre-obese)", "Obese (Class I)", "Obese (Class II)", "Obese (Class III)"]
 
-# bmi = user_weight_in_kilograms / (user_height_in_meters * user_height_in_meters)
+bmi = user_weight_in_kilograms / (user_height_in_meters * user_height_in_meters)
 
-# if bmi <=16.0:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[0]}")
-# elif bmi >=16.0 and bmi<17:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[1]}")
-# elif bmi >=17.0 and bmi<18.5:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[2]}")
-# elif bmi >=18.5 and bmi<24.9:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[3]}")
-# elif bmi >=25.0 and bmi<30:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[4]}")
-# elif bmi >=30.0 and bmi<35:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[5]}")
-# elif bmi >=35.0 and bmi<40:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[6]}")
-# else:
-#     print(f"Your BMI = {bmi:.2f}, Category: {category[7]}")
+if bmi <=16.0:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[0]}")
+elif bmi >=16.0 and bmi<17:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[1]}")
+elif bmi >=17.0 and bmi<18.5:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[2]}")
+elif bmi >=18.5 and bmi<24.9:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[3]}")
+elif bmi >=25.0 and bmi<30:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[4]}")
+elif bmi >=30.0 and bmi<35:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[5]}")
+elif bmi >=35.0 and bmi<40:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[6]}")
+else:
+    print(f"Your BMI = {bmi:.2f}, Category: {category[7]}")
 
 ### EXPECTED OUTPUT:
 # Enter weight in kilograms: 92
