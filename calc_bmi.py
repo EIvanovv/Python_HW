@@ -5,14 +5,12 @@ def get_user_data():
         [dictionary] of the form:
             {
                 "name" : "user_name",
-                "height": "user heigth in cm",
+                "height": "user heigth in meters",
                 "weight": "user weight in kilograms"
             }
     """
     user = {}
-    # user_name = str(input(("Enter your name: ")))
-    # user_height = float(input(("Enter your height in meters: ")))
-    # user_weight = float(input(("Enter your weight in kilograms: ")))
+
 
     def validate_name_input():
         while True:
@@ -38,46 +36,61 @@ def get_user_data():
     validate_name_input()
     validate_height_input()
     validate_weight_input()
-
-    # user["name"] = user_name
-    # user["height"] = user_height
-    # user["weight"] = user_weight
     
+
     return user
 
-# def calc_BMI(w,h):
-#     """calculates the BMI
+def calc_BMI(w,h):
+    """calculates the BMI
 
-#     Arguments:
-#         w {[float]} -- [weight]
-#         h {[float]} -- [height]
+    Arguments:
+        w {[float]} -- [weight]
+        h {[float]} -- [height]
 
-#     Returns:
-#         [float] -- [calculated BMI = w / (h*h)]
-#     """
+    Returns:
+        [float] -- [calculated BMI = w / (h*h)]
+    """
+    
+    calculated_BMI = float(w / (h*h))
 
-#     calculated_BMI = float(w / (h*h))
-#     return calculated_BMI
+    return calculated_BMI
     
 
-# def calc_BMI_category(bmi):
-#     """Calculates the BMI category
+def calc_BMI_category(bmi):
+    """Calculates the BMI category
 
-#     Arguments:
-#         bmi {[float]} -- [the bmi number index]
+    Arguments:
+        bmi {[float]} -- [the bmi number index]
 
-#     Returns:
-#         [string] -- [bmi category]
-#     """
+    Returns:
+        [string] -- [bmi category]
+    """
+    category = [" Underweight (Severe thinness)", "Underweight (Moderate thinness)", "Underweight (Mild thinness)", "Normal range", "Overweight (Pre-obese)", "Obese (Class I)", "Obese (Class II)", "Obese (Class III)"]
 
+    if bmi <=16.0:
+        return {category[0]}
+    elif bmi >=16.0 and bmi<17:
+        return {category[1]}
+    elif bmi >=17.0 and bmi<18.5:
+        return {category[2]}
+    elif bmi >=18.5 and bmi<24.9:
+        return {category[3]}
+    elif bmi >=25.0 and bmi<30:
+        return {category[4]}
+    elif bmi >=30.0 and bmi<35:
+        return {category[5]}
+    elif bmi >=35.0 and bmi<40:
+        return {category[6]}
+    else:
+        return {category[7]}
 
-# def print_results(bmi_category):
-#     """[Prints the BMI category to the user ]
+def print_results(bmi_category):
+    """[Prints the BMI category to the user ]
 
-#     Arguments:
-#         bmi_category {[string]} -- []
-#     """
-#     pass
+    Arguments:
+        bmi_category {[string]} -- []
+    """
+    print(f"{bmi_category}")
 
 # def cm_to_meters(cm):
 #     """converts centimetres to meters
@@ -88,9 +101,9 @@ def get_user_data():
 #     Returns:
 #         [float]
 #     """
-#     pass
+#     return cm / 100
 
-# user_data = get_user_data()
-# bmi = calc_BMI(user_data["weight"],user_data["height"] )
-# bmi_category = calc_BMI_category(bmi)
-# print_results(bmi_category)
+user_data = get_user_data()
+bmi = calc_BMI(user_data["weight"],user_data["height"] )
+bmi_category = calc_BMI_category(bmi)
+print_results(bmi_category)
