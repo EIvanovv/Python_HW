@@ -74,7 +74,7 @@ words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 #     else:
 #         d[key] = [value]
     
-print(d)
+# print(d)
 
 
 ### Your code here
@@ -98,8 +98,8 @@ print(d)
 """
 
 ### Given
-refrigerated = {'dairy', 'meats', 'frozen foods', 'seafood', 'deli'}
-sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
+# refrigerated = {'dairy', 'meats', 'frozen foods', 'seafood', 'deli'}
+# sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
 
 ### Your code here
 
