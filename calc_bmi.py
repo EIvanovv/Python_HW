@@ -11,7 +11,6 @@ def get_user_data():
     """
     user = {}
 
-
     def validate_name_input():
         while True:
             user_name = input(("Enter your name (at least 2 characters long): "))
