@@ -111,40 +111,46 @@ class Book:
         self.year = year
 
     def __str__(self):
-        return f"Title: {self.title}, Author: {self.author}, ISBN: {self.isbn}, Year: {self.year}"
+        return f"Title: {self.title}\nAuthor: {self.author}\nISBN: {self.isbn}\nYear: {self.year}\n"
 ### Define the Library class
 
 class Library:
     def __init__(self):
+        self.books = []
         pass
     
-    def add_book(book):
-        pass
+    def add_book(self, book):
+        self.books.append(book)
+        # print(book)
 
-    def remove_book(isbn):
-        pass
+    def remove_book(self, isbn):
+        if isbn not in self.books:
+            print(isbn, "hello")
 
     def find_book(isbn):
         pass
 
-    def list_books():
-        pass
+    def list_books(self):
+        for book in self.books:
+            print(book)
 
 ### TEST
-# book1 = Book("1984", "George Orwell", "123456789", 1949)
-# book2 = Book("To Kill a Mockingbird", "Harper Lee", "987654321", 1960)
+book1 = Book("1984", "George Orwell", "123456789", 1949)
+book2 = Book("To Kill a Mockingbird", "Harper Lee", "987654321", 1960)
 
-# library = Library()
-# library.add_book(book1)
-# library.add_book(book2)
+# print(book1, book2)
 
-# print("List of books in the library:")
-# library.list_books()
+library = Library()
+library.add_book(book1)
+library.add_book(book2)
+
+print("List of books in the library:")
+library.list_books()
 
 # # Remove a book
-# library.remove_book("123456789")
-# print("\nList of books after removal:")
-# library.list_books()
+library.remove_book("123456789")
+print("\nList of books after removal:")
+library.list_books()
 
 # # Find a book
 # book = library.find_book("987654321")
